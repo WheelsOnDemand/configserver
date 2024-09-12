@@ -1,0 +1,17 @@
+spring:
+ application:
+  name: inventory-service
+ cloud:
+  config:
+   profile: dev
+ datasource:
+  password: aai@123
+  url: jdbc:postgresql://inventory:5437/carinventorydb
+  username: postgres
+ jpa:
+   hibernate:
+     ddl-auto: update
+   properties:
+    hibernate:
+     dialect: org.hibernate.dialect.PostgreSQLDialect
+   show-sql: true
