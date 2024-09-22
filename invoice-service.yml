@@ -30,8 +30,6 @@ spring:
                         trusted:
                             packages: '*'
             value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
-        topic:
-            name: rental_topic3
 management:
   endpoint:
     metrics:
