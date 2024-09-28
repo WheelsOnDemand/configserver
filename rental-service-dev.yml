@@ -3,7 +3,7 @@ eureka:
     fetchRegistry: true
     registerWithEureka: true
     serviceUrl:
-      defaultZone: http://discoveryServer:9001/eureka
+      defaultZone: http://localhost:9001/eureka
   instance:
     instance-id: ${spring.application.name}:${instanceId:${random.value}}
     prefer-ip-address: true
@@ -14,7 +14,7 @@ spring:
     name: rental
   datasource:
     password: 12345
-    url: jdbc:postgresql://rentacarrentaldb:5432/rentacarrentaldb
+    url: jdbc:postgresql://localhost:5432/rentacarrentaldb
     username: postgres
   jpa:
     hibernate:
