@@ -1,7 +1,7 @@
 eureka:
   client:
     fetchRegistry: true
-    registerWithEureka: true
+    registerWithEureka: true 
     serviceUrl:
       defaultZone: http://discoveryServer:9001/eureka
   instance:
