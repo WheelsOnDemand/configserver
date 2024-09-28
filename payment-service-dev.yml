@@ -11,7 +11,7 @@ server:
   port: 8081
 spring:
   application:
-    name: payment 
+    name: payment-service
   datasource:
     password: aai@123
     url: jdbc:postgresql://localhost:5432/rentacarpaymentdb
