@@ -7,7 +7,7 @@ eureka:
   instance:
     preferIpAddress: true
 server:
-  port: 9011
+  port: 9090
 spring:
   application:
     name: apigateway
