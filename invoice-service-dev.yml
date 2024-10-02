@@ -13,7 +13,7 @@ spring:
     application:
         name: order
     zipkin:
-        baseUrl: http://zipkin-svc:9411
+        baseUrl: http://localhost:9411
     datasource:
         password: 12345
         url: jdbc:postgresql://localhost:5432/wheelsondemanddb
