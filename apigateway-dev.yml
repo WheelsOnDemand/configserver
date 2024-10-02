@@ -11,6 +11,8 @@ server:
 spring:
   application:
     name: apigateway
+  zipkin:
+    baseUrl: http://zipkin-svc:9411
   cloud:
     gateway:
       discovery:
