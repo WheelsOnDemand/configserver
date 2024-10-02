@@ -15,7 +15,7 @@ spring:
    profile: dev
  datasource:
   password: aai@123
-  url: jdbc:postgresql://localhost:5432/carinventorydb
+  url: jdbc:postgresql://localhost:5432/wheelsondemanddb
   username: postgres
  jpa:
    hibernate:
