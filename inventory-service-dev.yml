@@ -9,7 +9,9 @@ eureka:
     prefer-ip-address: true
 spring:
  application:
-  name: inventory-service 
+  name: inventory-service
+ zipkin:
+  baseUrl: http://zipkin-svc:9411
  cloud:
   config:
    profile: dev
