@@ -12,6 +12,8 @@ server:
 spring:
     application:
         name: filter-service
+    zipkin:
+        baseUrl: http://zipkin-svc:9411
     data:
         mongodb:
             database: filterservicedb
