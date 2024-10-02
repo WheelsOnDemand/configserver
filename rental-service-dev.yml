@@ -12,6 +12,8 @@ server:
 spring:
   application:
     name: rental
+  zipkin:
+    baseUrl: http://localhost:9411
   datasource:
     password: 12345
     url: jdbc:postgresql://localhost:5432/rentacarrentaldb
