@@ -30,3 +30,4 @@ microservice:
   inventory: http://inventory-service-svc
   filter: http://filter-service-svc
   invoice: http://invoice-service-svc
+  rental: http://rental-service-svc
