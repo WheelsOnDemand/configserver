@@ -13,10 +13,10 @@ spring:
   application:
     name: rental
   zipkin:
-    baseUrl: http://localhost:9411
+    baseUrl: http://zipkin-svc:9411
   datasource:
     password: 12345
-    url: jdbc:postgresql://localhost:5432/wheelsondemanddb
+    url: jdbc:postgresql://${DB_HOST:localhost}:5432/wheelsondemanddb
     username: postgres
   jpa:
     hibernate:
