@@ -50,3 +50,6 @@ management:
     export:
       prometheus:
         enabled: true
+microservice:
+  inventory: http:localhost:8080
+  payment: http:localhost:8084
