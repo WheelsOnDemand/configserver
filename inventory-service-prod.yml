@@ -29,3 +29,9 @@ spring:
              trusted:
                packages: '*'
        value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+microservice:
+  payment: http://payment-service-svc
+  inventory: http://inventory-service-svc
+  filter: http://filter-service-svc
+  invoice: http://invoice-service-svc
+  rental: http://rental-service-svc
