@@ -54,3 +54,9 @@ management:
     export:
       prometheus:
         enabled: true
+microservice:
+  payment: http://localhost:8084
+  inventory: http://localhost:8080
+  filter: http://localhost:8083
+  invoice: http://localhost:8082
+  rental: http://localhost:8085
