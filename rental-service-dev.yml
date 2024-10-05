@@ -16,7 +16,7 @@ spring:
     baseUrl: http://localhost:9411
   datasource:
     password: 12345
-    url: jdbc:postgresql://localhost:5432/rentacarrentaldb
+    url: jdbc:postgresql://localhost:5432/wheelsondemanddb
     username: postgres
   jpa:
     hibernate:
