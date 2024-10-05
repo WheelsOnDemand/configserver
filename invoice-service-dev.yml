@@ -55,3 +55,5 @@ management:
     export:
       prometheus:
         enabled: true
+microservice:
+  inventory: http://inventory-service-svc
