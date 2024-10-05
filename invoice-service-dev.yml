@@ -56,4 +56,4 @@ management:
       prometheus:
         enabled: true
 microservice:
-  inventory: http://inventory-service-svc
+  inventory: http://localhost:8080
