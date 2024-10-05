@@ -1,22 +1,13 @@
-eureka:
-  client:
-    fetchRegistry: true
-    registerWithEureka: true
-    serviceUrl:
-      defaultZone: http://localhost:9001/eureka
-  instance:
-    instance-id: ${spring.application.name}:${instanceId:${random.value}}
-    prefer-ip-address: true
 server:
     port: 8082
 spring:
     application:
         name: order
     zipkin:
-        baseUrl: http://localhost:9411
+        baseUrl: http://zipkin-svc:9411
     datasource:
         password: 12345
-        url: jdbc:postgresql://localhost:5432/wheelsondemanddb
+        url: jdbc:postgresql://${DB_HOST:localhost}:5432/wheelsondemanddb
         username: postgres
     jpa:
         hibernate:
