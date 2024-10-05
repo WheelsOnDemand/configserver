@@ -14,10 +14,17 @@ spring:
         name: filter-service 
     zipkin:
         baseUrl: http://localhost:9411
-    data:
-        mongodb:
-            database: filterservicedb
-            uri: mongodb://localhost:27017
+    datasource:
+        password: aai@123
+        url: jdbc:postgresql://localhost:5432/wheelsondemanddb
+        username: postgres
+    jpa:
+       hibernate:
+         ddl-auto: update
+       properties:
+        hibernate:
+          dialect: org.hibernate.dialect.PostgreSQLDialect
+        show-sql: true
     kafka:
         consumer:
             auto-offset-reset: earliest
