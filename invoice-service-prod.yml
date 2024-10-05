@@ -23,7 +23,7 @@ spring:
     kafka:
         consumer:
             auto-offset-reset: earliest
-            bootstrap-servers: localhost:9092
+            bootstrap-servers: kafka:9092
             group-id: invoice
             key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
             properties:
