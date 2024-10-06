@@ -8,7 +8,7 @@ spring:
    profile: dev
  datasource:
   password: aai@123
-  url: jdbc:postgresql://${DB_HOST:localhost}:5432/wheelsondemanddb
+  url: jdbc:postgresql://${DB_HOST:localhost}:5432/inventorydb
   username: postgres
  jpa:
    hibernate:
