@@ -16,9 +16,9 @@ spring:
   config:
    profile: dev
  datasource:
-  password: admin
+  password: root
   url: jdbc:postgresql://localhost:5432/invnetorydb
-  username: root
+  username: admin
  jpa:
    hibernate:
      ddl-auto: update
