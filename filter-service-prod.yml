@@ -7,7 +7,7 @@ spring:
         baseUrl: http://zipkin-svc:9411
     datasource:
         password: aai@123
-        url: jdbc:postgresql://${DB_HOST:localhost}:5432/wheelsondemanddb
+        url: jdbc:postgresql://${DB_HOST:localhost}:5432/filterdb
         username: postgres
     jpa:
        hibernate:
