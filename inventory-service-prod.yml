@@ -7,9 +7,9 @@ spring:
   config:
    profile: dev
  datasource:
-  password: admin
+  password: root
   url: jdbc:postgresql://${DB_HOST:localhost}:5432/inventorydb
-  username: root
+  username: admin
  jpa:
    hibernate:
      ddl-auto: update
