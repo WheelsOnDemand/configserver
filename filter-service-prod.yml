@@ -6,9 +6,9 @@ spring:
     zipkin:
         baseUrl: http://zipkin-svc:9411
     datasource:
-        password: aai@123
+        password: admin
         url: jdbc:postgresql://${DB_HOST:localhost}:5432/filterdb
-        username: postgres
+        username: root
     jpa:
        hibernate:
          ddl-auto: update
