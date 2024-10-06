@@ -15,9 +15,9 @@ spring:
     zipkin:
         baseUrl: http://localhost:9411
     datasource:
-        password: root
+        password: aai@123
         url: jdbc:postgresql://localhost:5432/invoicedb
-        username: admin
+        username: postgres
     jpa:
         hibernate:
             ddl-auto: update
