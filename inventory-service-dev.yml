@@ -16,9 +16,9 @@ spring:
   config:
    profile: dev
  datasource:
-  password: aai@123
-  url: jdbc:postgresql://localhost:5432/wheelsondemanddb
-  username: postgres
+  password: admin
+  url: jdbc:postgresql://localhost:5432/invnetorydb
+  username: root
  jpa:
    hibernate:
      ddl-auto: update
