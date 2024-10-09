@@ -17,14 +17,14 @@ spring:
    profile: dev
  datasource:
   password: aai@123
-  url: jdbc:postgresql://localhost:5432/invnetorydb
+  url: jdbc:mysql://localhost:3306/invnetorydb
   username: postgres
  jpa:
    hibernate:
      ddl-auto: update
    properties:
     hibernate:
-     dialect: org.hibernate.dialect.PostgreSQLDialect
+     dialect: org.hibernate.dialect.MySQLDialect
    show-sql: true 
  kafka:
      consumer:
