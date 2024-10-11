@@ -1,3 +1,11 @@
+eureka:
+  client:
+    fetch-registry: true
+    registerWithEureka: true
+    service-url:
+      defaultZone: http://eureka-svc:9001/eureka/
+  instance:
+    preferIpAddress: true
 spring:
  application:
   name: inventory-service
