@@ -16,9 +16,9 @@ spring:
   config:
    profile: dev
  datasource:
-  password: aai@123
+  password: root
   url: jdbc:mysql://localhost:3306/invnetorydb
-  username: postgres
+  username: root
  jpa:
    hibernate:
      ddl-auto: update
