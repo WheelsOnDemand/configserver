@@ -9,7 +9,7 @@ spring:
  datasource:
   password: root
   url: jdbc:mysql://${DB_HOST:localhost}:3306/inventorydb
-  username: admin
+  username: root
  jpa:
    hibernate:
      ddl-auto: update
