@@ -11,6 +11,14 @@ spring:
         locator:
           enabled: true
           lower-case-service-id: true
+  kubernetes:
+      discovery:
+        enabled: true
+        all-namespaces: true
+    discovery:
+      client:
+        health-indicator:
+          enabled: false
 management:
   endpoint:
     metrics:
