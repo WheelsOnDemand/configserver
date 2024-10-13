@@ -7,37 +7,40 @@ eureka:
   instance:
     instance-id: ${spring.application.name}:${instanceId:${random.value}}
     prefer-ip-address: true
+
 spring:
- application:
-  name: inventory-service
- zipkin:
-  baseUrl: http://localhost:9411
- cloud:
-  config:
-   profile: dev
- datasource:
-  password: root
-  url: jdbc:mysql://localhost:3306/invnetorydb
-  username: root
- jpa:
-   hibernate:
-     ddl-auto: update
-   properties:
+  application:
+    name: inventory-service
+  zipkin:
+    baseUrl: http://localhost:9411
+  cloud:
+    config:
+      profile: dev
+  datasource:
+    url: jdbc:mysql://localhost:3306/inventorydb
+    username: root
+    password: root
+  jpa:
     hibernate:
-     dialect: org.hibernate.dialect.MySQLDialect
-   show-sql: true 
- kafka:
-     consumer:
-       auto-offset-reset: earliest
-       bootstrap-servers: localhost:9092
-       group-id: inventory2
-       key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
-       properties:
-         spring:
-           json:
-             trusted:
-               packages: '*'
-       value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+    show-sql: true 
+
+kafka:
+  consumer:
+    auto-offset-reset: earliest
+    bootstrap-servers: localhost:9092
+    group-id: inventory2
+    key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+    properties:
+      spring:
+        json:
+          trusted:
+            packages: '*'
+    value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+
 microservice:
   payment: http://localhost:8081
   inventory: http://localhost:8080
