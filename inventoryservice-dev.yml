@@ -17,15 +17,15 @@ spring:
     config:
       profile: dev
   datasource:
-    url: jdbc:mysql://localhost:3306/inventorydb
-    username: root
-    password: root
+    url: jdbc:postgresql://localhost:5432/inventorydb
+    username: postgres
+    password: aai@123
   jpa:
     hibernate:
       ddl-auto: update
     properties:
       hibernate:
-        dialect: org.hibernate.dialect.MySQLDialect
+        dialect: org.hibernate.dialect.PostgreSQLDialect
     show-sql: true 
 
 kafka:
