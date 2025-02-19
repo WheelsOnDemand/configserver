@@ -15,9 +15,9 @@ spring:
   zipkin:
     baseUrl: http://localhost:9411
   datasource:
-    password: root
+    password: postgres
     url: jdbc:postgresql://localhost:5432/rentaldb
-    username: root
+    username: aai@123
   jpa:
     hibernate:
       ddl-auto: update
